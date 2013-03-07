@@ -41,7 +41,7 @@
    BUTTONS
    ====================================
 */
-/* line 12, ../../component/styles/alchemy-buttons.scss */
+/* line 12, ../../component/styles/buttons.scss */
 .btn,
 .button,
 button {
@@ -93,7 +93,7 @@ button {
   /* ----------------------- */
   /* buttons with icons */
 }
-/* line 30, ../../component/styles/alchemy-buttons.scss */
+/* line 30, ../../component/styles/buttons.scss */
 .btn:hover,
 .button:hover,
 button:hover {
@@ -111,7 +111,7 @@ button:hover {
   background-color: #f7f7f6;
   /* fallback */
 }
-/* line 35, ../../component/styles/alchemy-buttons.scss */
+/* line 35, ../../component/styles/buttons.scss */
 .btn:active,
 .button:active,
 button:active {
@@ -133,7 +133,7 @@ button:active {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 54, ../../component/styles/alchemy-buttons.scss */
+/* line 54, ../../component/styles/buttons.scss */
 .btn.primary, .btn.btn-primary, .btn.warning:hover, .btn.btn-warning:hover, .btn.danger, .btn.btn-danger, .btn.danger:hover, .btn.btn-danger:hover, .btn.success:hover, .btn.btn-success:hover,
 .button.primary,
 .button.btn-primary,
@@ -162,7 +162,7 @@ button.btn-success:hover {
   -moz-box-shadow: 0 1px 6px rgba(255, 255, 255, 0.25) inset;
   box-shadow: 0 1px 6px rgba(255, 255, 255, 0.25) inset;
 }
-/* line 59, ../../component/styles/alchemy-buttons.scss */
+/* line 59, ../../component/styles/buttons.scss */
 .btn.primary:active, .btn.btn-primary:active, .btn.warning:hover:active, .btn.btn-warning:hover:active, .btn.danger:active, .btn.btn-danger:active, .btn.danger:hover:active, .btn.btn-danger:hover:active, .btn.success:hover:active, .btn.btn-success:hover:active,
 .button.primary:active,
 .button.btn-primary:active,
@@ -190,7 +190,7 @@ button.btn-success:hover:active {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 67, ../../component/styles/alchemy-buttons.scss */
+/* line 67, ../../component/styles/buttons.scss */
 .btn.primary, .btn.btn-primary,
 .button.primary,
 .button.btn-primary,
@@ -211,7 +211,7 @@ button.btn-primary {
   background-color: #1086bc, 7%;
   /* fallback */
 }
-/* line 71, ../../component/styles/alchemy-buttons.scss */
+/* line 71, ../../component/styles/buttons.scss */
 .btn.primary:hover, .btn.btn-primary:hover,
 .button.primary:hover,
 .button.btn-primary:hover,
@@ -231,7 +231,7 @@ button.btn-primary:hover {
   background-color: #1086bc, 11%;
   /* fallback */
 }
-/* line 76, ../../component/styles/alchemy-buttons.scss */
+/* line 76, ../../component/styles/buttons.scss */
 .btn.primary:active, .btn.btn-primary:active,
 .button.primary:active,
 .button.btn-primary:active,
@@ -251,7 +251,7 @@ button.btn-primary:active {
   background-color: #1294cf;
   /* fallback */
 }
-/* line 83, ../../component/styles/alchemy-buttons.scss */
+/* line 83, ../../component/styles/buttons.scss */
 .btn.warning, .btn.btn-warning,
 .button.warning,
 .button.btn-warning,
@@ -260,7 +260,7 @@ button.btn-warning {
   /* warning */
   color: #c41d27;
 }
-/* line 86, ../../component/styles/alchemy-buttons.scss */
+/* line 86, ../../component/styles/buttons.scss */
 .btn.warning:hover, .btn.btn-warning:hover,
 .button.warning:hover,
 .button.btn-warning:hover,
@@ -280,7 +280,7 @@ button.btn-warning:hover {
   background-color: #bb1c25;
   /* fallback */
 }
-/* line 91, ../../component/styles/alchemy-buttons.scss */
+/* line 91, ../../component/styles/buttons.scss */
 .btn.warning:active, .btn.btn-warning:active,
 .button.warning:active,
 .button.btn-warning:active,
@@ -299,7 +299,7 @@ button.btn-warning:active {
   background-color: #a01820;
   /* fallback */
 }
-/* line 97, ../../component/styles/alchemy-buttons.scss */
+/* line 97, ../../component/styles/buttons.scss */
 .btn.danger, .btn.btn-danger,
 .button.danger,
 .button.btn-danger,
@@ -319,7 +319,7 @@ button.btn-danger {
   background-color: #bb1c25;
   /* fallback */
 }
-/* line 101, ../../component/styles/alchemy-buttons.scss */
+/* line 101, ../../component/styles/buttons.scss */
 .btn.danger:hover, .btn.btn-danger:hover,
 .button.danger:hover,
 .button.btn-danger:hover,
@@ -338,7 +338,7 @@ button.btn-danger:hover {
   background-color: #c81e28;
   /* fallback */
 }
-/* line 105, ../../component/styles/alchemy-buttons.scss */
+/* line 105, ../../component/styles/buttons.scss */
 .btn.danger:active, .btn.btn-danger:active,
 .button.danger:active,
 .button.btn-danger:active,
@@ -357,7 +357,7 @@ button.btn-danger:active {
   background-color: #a01820;
   /* fallback */
 }
-/* line 112, ../../component/styles/alchemy-buttons.scss */
+/* line 112, ../../component/styles/buttons.scss */
 .btn.success, .btn.btn-success,
 .button.success,
 .button.btn-success,
@@ -366,7 +366,7 @@ button.btn-success {
   /* success */
   color: #4a8e16;
 }
-/* line 115, ../../component/styles/alchemy-buttons.scss */
+/* line 115, ../../component/styles/buttons.scss */
 .btn.success:hover, .btn.btn-success:hover,
 .button.success:hover,
 .button.btn-success:hover,
@@ -386,7 +386,7 @@ button.btn-success:hover {
   background-color: #458515;
   /* fallback */
 }
-/* line 120, ../../component/styles/alchemy-buttons.scss */
+/* line 120, ../../component/styles/buttons.scss */
 .btn.success:active, .btn.btn-success:active,
 .button.success:active,
 .button.btn-success:active,
@@ -405,31 +405,31 @@ button.btn-success:active {
   background-color: #376a11;
   /* fallback */
 }
-/* line 128, ../../component/styles/alchemy-buttons.scss */
+/* line 128, ../../component/styles/buttons.scss */
 .btn.mini,
 .button.mini,
 button.mini {
   font-size: 75%;
 }
-/* line 132, ../../component/styles/alchemy-buttons.scss */
+/* line 132, ../../component/styles/buttons.scss */
 .btn.small,
 .button.small,
 button.small {
   font-size: 85%;
 }
-/* line 136, ../../component/styles/alchemy-buttons.scss */
+/* line 136, ../../component/styles/buttons.scss */
 .btn.large,
 .button.large,
 button.large {
   font-size: 125%;
 }
-/* line 140, ../../component/styles/alchemy-buttons.scss */
+/* line 140, ../../component/styles/buttons.scss */
 .btn.huge,
 .button.huge,
 button.huge {
   font-size: 155%;
 }
-/* line 148, ../../component/styles/alchemy-buttons.scss */
+/* line 148, ../../component/styles/buttons.scss */
 .btn.disabled, .btn[disabled],
 .button.disabled,
 .button[disabled],
@@ -437,7 +437,7 @@ button.disabled,
 button[disabled] {
   /* common for light buttons */
 }
-/* line 151, ../../component/styles/alchemy-buttons.scss */
+/* line 151, ../../component/styles/buttons.scss */
 .btn.disabled, .btn.disabled:hover, .btn.disabled:active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:active,
 .button.disabled,
 .button.disabled:hover,
@@ -468,7 +468,7 @@ button[disabled]:active {
   background-color: #f9f9f9;
   /* fallback */
 }
-/* line 159, ../../component/styles/alchemy-buttons.scss */
+/* line 159, ../../component/styles/buttons.scss */
 .btn.disabled.warning, .btn.disabled.btn-warning, .btn.disabled:hover.warning, .btn.disabled:hover.btn-warning, .btn.disabled:active.warning, .btn.disabled:active.btn-warning, .btn[disabled].warning, .btn[disabled].btn-warning, .btn[disabled]:hover.warning, .btn[disabled]:hover.btn-warning, .btn[disabled]:active.warning, .btn[disabled]:active.btn-warning,
 .button.disabled.warning,
 .button.disabled.btn-warning,
@@ -496,7 +496,7 @@ button[disabled]:active.warning,
 button[disabled]:active.btn-warning {
   color: rgba(165, 25, 33, 0.47);
 }
-/* line 168, ../../component/styles/alchemy-buttons.scss */
+/* line 168, ../../component/styles/buttons.scss */
 .btn.processing, .btn.processing:hover, .btn.processing:active,
 .button.processing,
 .button.processing:hover,
@@ -511,14 +511,14 @@ button.processing:active {
   background: url("images/spinner.gif") no-repeat 50% 50%, -o-linear-gradient(#ffffff, #e5e5e4);
   background: url("images/spinner.gif") no-repeat 50% 50%, linear-gradient(#ffffff, #e5e5e4);
 }
-/* line 178, ../../component/styles/alchemy-buttons.scss */
+/* line 178, ../../component/styles/buttons.scss */
 .btn.icon,
 .button.icon,
 button.icon {
   padding-left: 28px;
   position: relative;
 }
-/* line 182, ../../component/styles/alchemy-buttons.scss */
+/* line 182, ../../component/styles/buttons.scss */
 .btn.icon:before,
 .button.icon:before,
 button.icon:before {
@@ -527,7 +527,7 @@ button.icon:before {
   width: 16px;
   height: 16px;
 }
-/* line 190, ../../component/styles/alchemy-buttons.scss */
+/* line 190, ../../component/styles/buttons.scss */
 .btn.icon i, .btn.icon:before,
 .button.icon i,
 .button.icon:before,
@@ -537,7 +537,7 @@ button.icon:before {
   top: 4px;
   left: 8px;
 }
-/* line 197, ../../component/styles/alchemy-buttons.scss */
+/* line 197, ../../component/styles/buttons.scss */
 .btn.icon > .btn, .btn.icon > .button,
 .button.icon > .btn,
 .button.icon > .button,
@@ -555,7 +555,7 @@ button.icon > .button {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 207, ../../component/styles/alchemy-buttons.scss */
+/* line 207, ../../component/styles/buttons.scss */
 .btn.icon.download_example:before,
 .button.icon.download_example:before,
 button.icon.download_example:before {
@@ -563,13 +563,13 @@ button.icon.download_example:before {
   background-position: -512px -16px;
 }
 
-/* line 215, ../../component/styles/alchemy-buttons.scss */
+/* line 215, ../../component/styles/buttons.scss */
 div.btn.icon {
   padding: 0;
   display: inline-block;
 }
 
-/* line 222, ../../component/styles/alchemy-buttons.scss */
+/* line 222, ../../component/styles/buttons.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -578,7 +578,7 @@ input::-moz-focus-inner {
 
 /* ----------------------- */
 /* groups */
-/* line 234, ../../component/styles/alchemy-buttons.scss */
+/* line 234, ../../component/styles/buttons.scss */
 .btn-group .btn,
 .btn-group .button,
 .btn-group button,
@@ -596,7 +596,7 @@ input::-moz-focus-inner {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 242, ../../component/styles/alchemy-buttons.scss */
+/* line 242, ../../component/styles/buttons.scss */
 .btn-group .btn:first-child,
 .btn-group .button:first-child,
 .btn-group button:first-child,
@@ -610,7 +610,7 @@ input::-moz-focus-inner {
   -o-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 247, ../../component/styles/alchemy-buttons.scss */
+/* line 247, ../../component/styles/buttons.scss */
 .btn-group .btn:last-child,
 .btn-group .button:last-child,
 .btn-group button:last-child,
@@ -623,7 +623,7 @@ input::-moz-focus-inner {
   -o-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-/* line 250, ../../component/styles/alchemy-buttons.scss */
+/* line 250, ../../component/styles/buttons.scss */
 .btn-group .btn:first-child:last-child,
 .btn-group .button:first-child:last-child,
 .btn-group button:first-child:last-child,
@@ -636,18 +636,18 @@ input::-moz-focus-inner {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 255, ../../component/styles/alchemy-buttons.scss */
+/* line 255, ../../component/styles/buttons.scss */
 .btn-group form,
 .btn_group form {
   /* for rails button_to helper (creates form > div > input) */
 }
-/* line 256, ../../component/styles/alchemy-buttons.scss */
+/* line 256, ../../component/styles/buttons.scss */
 .btn-group form div,
 .btn_group form div {
   display: block;
   float: left;
 }
-/* line 264, ../../component/styles/alchemy-buttons.scss */
+/* line 264, ../../component/styles/buttons.scss */
 .btn-group form:first-child .btn,
 .btn-group form:first-child .button,
 .btn-group form:first-child button,
@@ -661,7 +661,7 @@ input::-moz-focus-inner {
   -o-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 273, ../../component/styles/alchemy-buttons.scss */
+/* line 273, ../../component/styles/buttons.scss */
 .btn-group form:last-child .btn,
 .btn-group form:last-child .button,
 .btn-group form:last-child button,

@@ -35,7 +35,7 @@ angular.module("alch-templates").run(function($templateCache) {
     "      <a class=\"btn icon\" href=\"#\">Download link (:before)</a>" +
     "      <div class=\"btn icon\">" +
     "        <i class=\"download_icon-black\"></i>" +
-    "        <a class=\"btn\" href=\"#\">Download link (<i>)</a>" +
+    "        <a class=\"btn\" href=\"#\">Download link (&lt;i&gt;)</a>" +
     "      </div>" +
     "      <div class=\"btn icon\">" +
     "        <input class=\"btn\" type=\"submit\" value=\"Submit (:before)\">" +
