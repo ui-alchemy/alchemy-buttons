@@ -123,22 +123,83 @@ button {
     }
 
   /* ----------------------- */
-  /* size */
+  /* size *//* does also contain styles for button icons. Overides normal button styles */
 
-  &.mini {
+
+  &.mini,
+  &.btn-mini {
     font-size: 75%;
+    &.icon {
+      & > i {
+        top:1px;
+        left: 9px;
+      }
+      & > .btn {
+        padding-left:26px;
+      }
+    }
+    &:not(.icon) {
+      padding-bottom: 0px;
+      padding-top: 4px;
+      & > i[class*="_icon-"] {
+        top: -3px;
+      }
+    }
+
   }
 
-  &.small {
+  &.small,
+  &.btn-small {
     font-size: 85%;
+    &.icon {
+      & > i {
+        top:3px;
+        left: 9px;
+      }
+      & > .btn {
+        padding-left:28px;
+      }
+    }
+    &:not(.icon) {
+      padding-bottom: 3px;
+      & > i[class*="_icon-"] {
+        top: -2px;
+      }
+    }
   }
 
-  &.large {
+  &.large,
+  &.btn-large {
     font-size: 125%;
+    &.icon {
+      & > i {
+        top:8px;
+        left: 14px;
+      }
+      & > .btn {
+        padding-left:36px;
+      }
+    }
+    &:not(.icon) > i[class*="_icon-"] {
+      top: 0px;
+    }
   }
 
-  &.huge {
+  &.huge,
+  &.btn-huge {
     font-size: 155%;
+    &.icon {
+      & > i {
+        top:11px;
+        left: 19px;
+      }
+      & > .btn {
+        padding-left:39px;
+      }
+    }
+    &:not(.icon) > i[class*="_icon-"] {
+      top: 2px;
+    }
   }
 
   /* ----------------------- */  
@@ -162,6 +223,9 @@ button {
     }
   }
 
+  /* ----------------------- */  
+  /* processing */
+
   &.processing {
     &,
     &:hover,
@@ -173,7 +237,7 @@ button {
   }
 
   /* ----------------------- */
-  /* buttons with icons */
+  /* buttons with icons *//* contains styles for normal button size */
 
   &.icon {
     padding-left: 28px;
@@ -190,26 +254,30 @@ button {
     &:before {
       position: absolute;
       top: 4px;
-      left: 8px;
+      left: 13px;
     }
 
     & > .btn,
     & > .button { /* for inputs - submit (need to be in special div) */
       margin: 0;
       border: 0;
-      padding-left: 28px;
+      padding-left: 32px;
       display: inline-block;
       background: none;
       @include filter-gradient($transparent_white_color, $transparent_white_color);
       @include box-shadow(none);
     }
+  }
 
-    &.download_example:before {
-      @include background(image-url('alchemy/icons/action-icons.png'));
-      background-position: -512px -16px;
+  &:not(.icon) {
+    & > i[class*="_icon-"] {
+      position: relative;
     }
   }
 }
+
+
+
 
 // reset padding for outer button div
 div.btn.icon {
@@ -229,49 +297,105 @@ input::-moz-focus-inner {
 
 .btn-group,
 .btn_group {
-  .btn,
-  .button,
-  button {
-    margin-left: 0;
-    margin-right: 0;
-    float: left;
+
+  /* ----------------------- */  
+  /* standart-groups */
+  &:not(.btn-group-vertical) {
     display: inline-block;
-    border-left-width: 0;
-    @include border-radius(0);
-
-    &:first-child {
-      border-left-width: 1px;
-      @include border-radius($border_radius 0 0 $border-radius);
-    }
-
-    &:last-child {
-      @include border-radius(0 $border_radius $border-radius 0);
-    }
-    &:first-child:last-child {
-      @include border-radius($border_radius);
-    }
-  }
-
-  form { /* for rails button_to helper (creates form > div > input) */
-    div {
-      display: block;
+    .btn,
+    .button,
+    button {
+      margin-left: 0;
+      margin-right: 0;
       float: left;
-    }
+      display: inline-block;
+      border-left-width: 0;
+      @include border-radius(0);
 
-    &:first-child {
-      .btn,
-      .button,
-      button {
+      &:first-child {
         border-left-width: 1px;
         @include border-radius($border_radius 0 0 $border-radius);
       }
+
+      &:last-child {
+        @include border-radius(0 $border_radius $border-radius 0);
+      }
+      &:first-child:last-child {
+        @include border-radius($border_radius);
+      }
     }
 
-    &:last-child {
+    form { /* for rails button_to helper (creates form > div > input) */
+      display: inline-block;
+      div {
+        float: left;
+
+      }
+
+      &:first-child {
+        .btn,
+        .button,
+        button {
+          border-left-width: 1px;
+          @include border-radius($border_radius 0 0 $border-radius);
+        }
+      }
+
+      &:last-child {
+        .btn,
+        .button,
+        button {
+          @include border-radius(0 $border_radius $border-radius 0);
+        }
+      }
+    }
+  }
+
+  /* ----------------------- */  
+  /* vertical groups */
+  &.btn-group-vertical {
+    display: inline-block;
+    .btn,
+    .button,
+    button {
+      display:block;
+      margin: 0px;
+      max-width: 100%;
+      @include border-radius(0 0 0 0);
+
+      &:first-child {
+        @include border-radius($border_radius $border-radius 0 0);
+      }
+
+      &:last-child {
+        @include border-radius(0 0 $border_radius $border-radius);
+      }
+    }
+  }
+}
+
+/* ----------------------- */  
+/* toolbars */
+
+.btn-toolbar {
+
+  & > .btn-group,
+  & > .btn_group {
+    display: inline-block;
+    &:first-of-type {
       .btn,
       .button,
       button {
-        @include border-radius(0 $border_radius $border-radius 0);
+        &:first-child{
+        margin-left: 0px;
+        }
+      }
+    }
+    .btn,
+    .button,
+    button {
+      &:first-child {
+        margin-left: 5px;
       }
     }
   }
