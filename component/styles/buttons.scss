@@ -1,4 +1,3 @@
-@import "alchemy/alchemy";
 @import "buttons_vars";
 
 /*
@@ -16,7 +15,7 @@ button {
   font-family: $screenfont;
   font-size: 100%;
   padding: 0.5em 1em;
-  margin: 10px 8px 0 0;
+  margin: 0;
   cursor: pointer;
   border: 1px solid $btn_border_color;
   line-height: normal; /* must be normal because of firefox bug: http://cbjdigital.com/blog/2010/08/bulletproof_css_input_button_heights*/
@@ -139,8 +138,8 @@ button {
       }
     }
     &:not(.icon) {
-      padding-bottom: 0px;
-      padding-top: 4px;
+      padding-bottom: 0.25em;
+      padding-top: 0.25em;
       & > i[class*="_icon-"] {
         top: -3px;
       }
@@ -151,17 +150,21 @@ button {
   &.small,
   &.btn-small {
     font-size: 85%;
+
     &.icon {
       & > i {
         top:3px;
         left: 9px;
       }
+
       & > .btn {
         padding-left:28px;
       }
     }
+
     &:not(.icon) {
-      padding-bottom: 3px;
+      padding-bottom: 0.35em;
+
       & > i[class*="_icon-"] {
         top: -2px;
       }
@@ -171,15 +174,18 @@ button {
   &.large,
   &.btn-large {
     font-size: 125%;
+
     &.icon {
       & > i {
         top:8px;
         left: 14px;
       }
+
       & > .btn {
         padding-left:36px;
       }
     }
+
     &:not(.icon) > i[class*="_icon-"] {
       top: 0px;
     }
@@ -188,21 +194,24 @@ button {
   &.huge,
   &.btn-huge {
     font-size: 155%;
+
     &.icon {
       & > i {
         top:11px;
         left: 19px;
       }
+
       & > .btn {
         padding-left:39px;
       }
     }
+
     &:not(.icon) > i[class*="_icon-"] {
       top: 2px;
     }
   }
 
-  /* ----------------------- */  
+  /* ----------------------- */
   /* disabled */
 
   &.disabled,
@@ -223,7 +232,7 @@ button {
     }
   }
 
-  /* ----------------------- */  
+  /* ----------------------- */
   /* processing */
 
   &.processing {
@@ -259,7 +268,6 @@ button {
 
     & > .btn,
     & > .button { /* for inputs - submit (need to be in special div) */
-      margin: 0;
       border: 0;
       padding-left: 32px;
       display: inline-block;
@@ -277,8 +285,6 @@ button {
 }
 
 
-
-
 // reset padding for outer button div
 div.btn.icon {
   padding: 0;
@@ -287,26 +293,25 @@ div.btn.icon {
 
 // quite useful reset feature
 button::-moz-focus-inner,
-input::-moz-focus-inner { 
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* ----------------------- */  
+/* ----------------------- */
 /* groups */
 
 .btn-group,
 .btn_group {
 
-  /* ----------------------- */  
   /* standart-groups */
   &:not(.btn-group-vertical) {
     display: inline-block;
+    white-space: nowrap;
+
     .btn,
     .button,
     button {
-      margin-left: 0;
-      margin-right: 0;
       float: left;
       display: inline-block;
       border-left-width: 0;
@@ -320,6 +325,7 @@ input::-moz-focus-inner {
       &:last-child {
         @include border-radius(0 $border_radius $border-radius 0);
       }
+
       &:first-child:last-child {
         @include border-radius($border_radius);
       }
@@ -327,6 +333,7 @@ input::-moz-focus-inner {
 
     form { /* for rails button_to helper (creates form > div > input) */
       display: inline-block;
+
       div {
         float: left;
 
@@ -350,53 +357,27 @@ input::-moz-focus-inner {
       }
     }
   }
-
-  /* ----------------------- */  
-  /* vertical groups */
-  &.btn-group-vertical {
-    display: inline-block;
-    .btn,
-    .button,
-    button {
-      display:block;
-      margin: 0px;
-      max-width: 100%;
-      @include border-radius(0 0 0 0);
-
-      &:first-child {
-        @include border-radius($border_radius $border-radius 0 0);
-      }
-
-      &:last-child {
-        @include border-radius(0 0 $border_radius $border-radius);
-      }
-    }
-  }
 }
 
-/* ----------------------- */  
-/* toolbars */
+ /* vertical groups */
+ /* TBD - same width, remove double-border, correct border-radius, add example to app */
+.btn_group_vertical,
+.btn-group-vertical {
+  display: inline-block;
 
-.btn-toolbar {
+  .btn,
+  .button,
+  button {
+    display:block;
+    max-width: 100%;
+    @include border-radius(0);
 
-  & > .btn-group,
-  & > .btn_group {
-    display: inline-block;
-    &:first-of-type {
-      .btn,
-      .button,
-      button {
-        &:first-child{
-        margin-left: 0px;
-        }
-      }
+    &:first-child {
+      @include border-radius($border_radius $border-radius 0 0);
     }
-    .btn,
-    .button,
-    button {
-      &:first-child {
-        margin-left: 5px;
-      }
+
+    &:last-child {
+      @include border-radius(0 0 $border_radius $border-radius);
     }
   }
 }
