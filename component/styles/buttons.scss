@@ -357,6 +357,13 @@ input::-moz-focus-inner {
       }
     }
   }
+
+  // clear after yourself
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
  /* vertical groups */
