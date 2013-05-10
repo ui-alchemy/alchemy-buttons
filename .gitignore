@@ -5,3 +5,4 @@ app/components
 *.swp
 *.swn
 *.swo
+*.DS_Store
