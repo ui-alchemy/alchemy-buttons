@@ -1,8 +1,8 @@
 node_modules
 .tmp
 .sass-cache
-app/components
+demo/components
 *.swp
 *.swn
 *.swo
-*.DS_Store
+dist/

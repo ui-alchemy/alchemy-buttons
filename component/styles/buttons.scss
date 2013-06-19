@@ -1,4 +1,6 @@
 @import "buttons_vars";
+@import "compass";
+@import "alchemy/alchemy";
 
 /*
    ====================================
@@ -9,7 +11,7 @@
 .btn,
 .button,
 button {
-  @include inline-block();
+  @include inline-block(middle);
   vertical-align: top;
   text-decoration: none;
   font-family: $screenfont;
@@ -23,12 +25,12 @@ button {
 
   color: $btn_text_color;
   text-shadow: 0 1px 0 rgba($white_color, 0.7);
-  @include linear_gradient(lighten($btn_neutral_color, 10%), lighten($btn_neutral_color, 15%), $btn_neutral_color);
+  @include linear_gradient(lighten($btn_neutral_color, 10%), lighten($btn_neutral_color, 14%), lighten($btn_neutral_color, 9%));
   @include box-shadow($btn_shadow_reflection_light); /* inside reflection */
 
   &:hover {
     border-color: darken($btn_border_color, 5%);
-    @include linear_gradient(lighten($btn_neutral_color, 13%), $white_color, lighten($btn_neutral_color, 6%));
+    @include linear_gradient(lighten($btn_neutral_color, 13%), lighten($btn_neutral_color, 50%), lighten($btn_neutral_color, 5%));
   }
 
   &:active {
