@@ -1,0 +1,10 @@
+@import "compass";
+@import "alchemy/alchemy";
+
+* {
+  @include box-sizing(border-box);
+}
+
+h3 {
+  clear: both;
+}
